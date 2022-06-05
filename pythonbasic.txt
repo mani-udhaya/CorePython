@@ -1,0 +1,75 @@
+================>>  BASICS OF PYTHON  <<==================
+
+Python: 
+	- Python is a high-level, interpreted, general-purpose programming language,
+	- Python is dynamically-typed language,
+	- Human understanding language,
+	- Guido van Rossum was developed and released  in 1991 as Python,
+	- Python 2.0  was released in 2000,
+	- Python 3.0 released in 2008,
+	- Python is Multi Paradigm(core strength) programming language.
+
+Python Interpreter:
+	An interpreter is a kind of program that executes other programs.
+ When you write Python programs , it converts source code written by the developer into 
+intermediate language which is again translated into the native language / machine language that is executed.
+
+Use of Python:
+	> Web Application
+	> Mobile Application
+	> Games
+	> DadaBase
+	> Network Programming
+	> DataScience/ Machine Learning/ Artificial Intelligence
+	> Internet of Things
+
+Features of Python:
+	1. Simple ,easy to learn 
+	2. Free and Open source
+	3. High level language
+	4. Platform indepent(PVM)
+	5. Portability
+	6. Dynamically Typed language
+	7. No need to explict data type in python
+	8. Libraries - extensive library in python.
+
+Flavours of Python :
+	1. python 
+	2. pypy - improve performe(IIT compiler)
+	3. Jython - (IVM) java python code
+	4. Cython/ Cpython - standard
+	5. Iron python - c#, .Net support
+	6. Puby python
+	7. Anaconda python - large set of data processing
+
+python core strength - Projects.
+
+Python "Duck Duck typing"
+
+Immutability:
+	once we create an object in python. we can't change it.It we trying to change that a new object will be create inste memory.
+
+Python Operators:
+	1. Arithmetic Operator         - (+, -, *, /, //, %, **)
+	2. Assignment Opreator       - ( = )
+	3. Comparision Operator     - (>, <, >=, <=, )
+	4. Bitwise Operator              - (&, |, ^, ~, <<, >>)
+	5. Logical Operator              - (and, or, not )
+	6. Identity Operator 	          - (is, is not)
+	7. Membership Operator     - (in, not in)
+
+Controflow Statement: 
+	1.  if , elif, else
+	2. Nested if
+Python is a  "CASE SENSITIVE "language.
+
+Iterative statement:
+	1. While loop / Nested While loop 
+	2. For loop / Nested For loop
+Types of Keyword:
+	- continue
+	- break
+	- pass
+
+*********************-------------------*******************
+ 
