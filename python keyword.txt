@@ -1,0 +1,198 @@
+==============  python keywords ===============
+
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async',
+ 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 
+'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal',
+ 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>>
+
+#1.) 
+height = 125.99
+wight = 5*8
+total = height*wight
+
+print(total)
+print(round(total))
+print(round(total))
+print(int(total))
+
+o/p--->
+5039.599999999999
+5039.6
+5039.6
+5039
+
+
+#2.) #  binary to decimal
+
+a = 0b1111
+print(a)
+b= 0B1010
+print(b)
+o/p ---->>
+15
+10
+
+#3.) #  octal to decimal
+
+a = 0o12345
+print(a)
+b= 0O3452
+print(b)
+o/p----->>
+5349
+1834
+
+#4.)  #  hexadecimal to decimal
+
+a = 0xABC
+print(a)
+a1 = 0Xabcd
+print(a1)
+a2 = 0xface
+print(a2)
+a3 = 0XBEFE
+print(a3)
+o/p ------>>
+2748
+43981
+64206
+48894
+
+#5.) # number conversion:
+
+print(bin(10))
+print(bin(15))
+
+print(oct(10))
+print(oct(20))
+
+print(hex(100))
+print(hex(50))
+
+print(bin(0xbad))
+
+o/p ------>>
+0b1010
+0b1111
+
+0o12
+0o24
+
+0x64
+0x32
+
+0b101110101101
+
+#6.)  # complex datatype:
+
+no = 5.6e3
+print(no)
+print(type(no))
+print(id(no))
+
+no2 = 5+6j         # 5 --> real part, 6j --> imagenary part
+print(no2)
+print(type(no2))
+print(no2.real)
+print(int(no2.real))
+print(no2.imag)
+print(int(no2.imag))
+o/p ---->>
+5600.0
+<class 'float'>
+2062628018608
+
+(5+6j)
+<class 'complex'>
+
+5.0
+5
+
+6.0
+6
+
+#7.) # Boolian datatype:
+
+marl1 = 95
+mark2 = 80
+print(marl1 > mark2)
+print(marl1 < mark2)
+print(marl1 == mark2)
+o/p--->
+True
+False
+False
+
+print(True + True)
+print(True + False)
+print(False + False)
+
+o/p--->
+2
+1
+0
+
+
+#8.)  # String datatype:
+
+name = 'abi'
+name1 = "abi"
+name2 = ''' abi
+B.Com_chemistry
+thanjavur
+tamil nadu
+india'''
+print(name)
+print(name1)
+print(name2)
+
+no = 10
+no = '10'
+print(no)
+print(type(no))
+
+print(no)
+print(type(no))
+
+#doorno = 233/12B
+#print(doorno)         # SyntaxError: invalid decimal literal
+
+doorno = '233/12B'
+print(doorno)
+
+o/p --->>
+abi
+abi
+
+abi
+B.Com_chemistry
+thanjavur
+tamil nadu
+india
+
+10
+<class 'str'>
+
+10
+<class 'str'>
+
+233/12B
+
+#10.) # String datatype:
+
+sentence = " 'singers' singing the "songs" "
+print(sentence)             #  SyntaxError: invalid syntax
+
+sentence = " 'singers' singing the 'songs' "
+print(sentence)
+
+sentence = ''' 'singers' singing the "songs" '''
+print(sentence)
+
+o/p ---->>
+" 'singers' singing the 'songs' "
+
+'singers' singing the "songs"
