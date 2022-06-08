@@ -1,0 +1,493 @@
+-------------------  Pattern Programs  -----------------------
+
+
+1.) 
+row =1
+while row<=5:                      
+    col =1
+    while col<=row:
+        print(col,end='')
+        col+=1
+    print()
+    row+=1
+o/p---->
+1
+12
+123
+1234
+12345
+
+  
+2.) row =1
+while row<=5:
+    col =1
+    while col<=row:
+        print(row,end='')
+        col+=1
+    print()
+    row+=1
+o/p---->
+1
+22
+333
+4444
+55555
+
+3.) row =1
+while row<=5:
+    col =1
+    while col<=5:
+        print((row+col),end='')
+        col+=1
+    print()
+    row+=1
+
+o/p---->
+2
+34
+456
+5678
+678910
+    
+4.)
+row =1
+while row<=5:
+    col =1
+    while col<=row:
+        print((row-col),end='')
+        col+=1
+    print()
+    row+=1
+
+o/p---->
+0
+10
+210
+3210
+43210
+    
+5.) 
+row =1
+while row<=5:
+    col =1
+    while col<=row:
+        print((row*col),end='')
+        col+=1
+    print()
+    row+=1
+
+o/p---->
+1
+24
+369
+481216
+510152025
+    
+6.) 
+row =1
+while row<=5:
+    col =1
+    while col<=row:
+        print((row-col),end='')
+        col+=1
+    print()
+    row+=2
+
+o/p---->
+0
+210
+43210
+
+7.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print(1,end='')
+        col+=1
+    print()
+    row-=1
+
+o/p---->
+11111
+1111
+111
+11
+1
+
+
+8.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print(1,end='')
+        col+=1
+    print()
+    row-=1
+o/p---->
+11111
+1111
+111
+11
+1
+    
+9.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print(col,end='')
+        col+=1
+    print()
+    row-=1
+o/p---->
+12345
+1234
+123
+12
+1
+
+10.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print(row,end='')
+        col+=1
+    print()
+    row-=1
+o/p---->
+55555
+4444
+333
+22
+1
+
+11.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print((row+col),end='')
+        col+=1
+    print()
+    row-=1
+
+o/p---->
+678910
+5678
+456
+34
+2
+
+12.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print((row-col),end='')
+        col+=1
+    print()
+    row-=1
+o/p---->
+43210
+3210
+210
+10
+0
+
+13.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print((row+col-1),end='')
+        col+=1
+    print()
+    row-=1
+o/p---->
+56789
+4567
+345
+23
+1
+
+14.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print('*',end='')
+        col+=1
+    print()
+    row-=1
+o/p---->
+*
+**
+***
+****
+*****
+15.)
+row =5
+value = 1
+while row>=1:
+    col =5
+    while col>=row:
+        print(value,end='')
+        value+=1
+        col-=1
+    print()
+    row-=1
+o/p---->
+1
+23
+456
+78910
+1112131415
+
+16.)
+row =5
+while row>=1:
+    col =5
+    while col>=row:
+        print('-',end='')
+        col-=1
+    print()
+    row-=1
+o/p---->
+-
+--
+---
+----
+-----
+
+17.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print('-',end='')
+        col+=1
+    print(1,end='')
+    print()
+    row-=1
+o/p---->
+-----1
+----1
+---1
+--1
+-1
+
+18.)
+row =5
+value =1
+while row>=1:
+    col =1
+    while col<=row:
+        print('-',end='')
+        col+=1
+    print(value,end='')
+    value+=1
+    print()
+    row-=1
+
+o/p--->
+-----1
+----2
+---3
+--4
+-5
+ 
+19.) 
+row =5
+value =5
+while row>=1:
+    col =1
+    while col<=row:
+        print('-',end='')
+        col+=1
+    print(value,end='')
+    value-=1
+    print()
+    row-=1
+o/p--->
+-----5
+----4
+---3
+--2
+-1
+
+
+20.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print('-',end='')
+        col+=1
+    print(row,end='')
+    print()
+    row-=1
+
+o/p---->
+- - - - - 5
+- - - - 4
+- - - 3
+- - 2
+- 1
+
+21.)
+row =5
+while row>=1:
+    col =5
+    while col>=row:
+        print(row ,end='')
+        col-=1
+    print()
+    row-=1
+o/p--->
+- - - - - 5
+- - - - 4 4
+- - - 3 3 3
+- - 2 2 2 2
+- 1 1 1 1 1
+
+22.)
+row =5
+while row>=1:
+    col =1
+    while col<=row:
+        print('  ' ,end='')
+        col+=1
+    col2=5
+    while col2>=row:
+        print(row,end=' ')
+        col2-=1
+    print()
+    row-=1
+
+o/p--->
+          5
+        4 4
+      3 3 3
+    2 2 2 2
+  1 1 1 1 1
+
+23.)
+row =5
+while row>=1:
+    col =1
+    while col<row:
+        print('  ' ,end='')
+        col+=1
+    col2=5
+    while col2>=row:
+        print(row,end=' ')
+        col2-=1
+    print()
+    row-=1
+
+o/p--->
+        5
+      4 4
+    3 3 3
+  2 2 2 2
+1 1 1 1 1
+
+24.)
+row =5
+while row>=1:
+    col =1
+    while col<row:
+        print('  ' ,end='')
+        col+=1
+    col2=5
+    while col2>=row:
+        print(row,' ',end=' ')
+        col2-=1
+    print()
+    row-=1
+
+o/p--->
+        5
+      4   4
+    3   3   3
+  2   2   2   2
+1   1   1   1   1
+
+25.)
+row =5
+while row>=1:
+    col =5
+    col2=1
+    while col2<row:
+        print('  ' ,end='')
+        col2+=1
+    while col>=row:
+        print(col,' ',end=' ')
+        col-=1
+    print()
+    row-=1
+
+o/p--->
+        5
+      5   4
+    5   4   3
+  5   4   3   2
+5   4   3   2   1
+
+26.)
+row =5
+while row>=1:
+    col =5
+    col2=1
+    while col2<row:
+        print('  ' ,end='')
+        col2+=1
+    while col>=row:
+        print(row,' ',end=' ')
+        col-=1
+    print()
+    row-=2
+o/p--->
+        5
+    3   3   3
+1   1   1   1   1
+
+27.)
+row =5
+while row>=1:
+    col =5
+    col2=1
+    while col2<row:
+        print('  ' ,end='')
+        col2+=1
+    while col>=row:
+        print('*',' ',end=' ')
+        col-=1
+    print()
+    row-=1
+o/p--->
+        *
+      *   *
+    *   *   *
+  *   *   *   *
+*   *   *   *   *
+28.)
+row =5
+while row>=1:
+    col =5
+    col2=1
+    while col2<row:
+        print('  ' ,end='')
+        col2+=1
+    while col>=row:
+        print('*',' ',end=' ')
+        col-=1
+    print()
+    row-=2
+o/p--->
+        *
+    *   *   *
+*   *   *   *   *
