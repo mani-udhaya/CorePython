@@ -1,1 +1,463 @@
-hi
+===========>>  CONTROLFLOW STATEMENT  <<===============
+	Flow of execution to the program is called control flow statement
+
+ControlFlow Strecture:
+	1. Conditional 
+	2. UnConditional
+1.Conditional:
+	A. Branching
+		> if, elif, else
+		> Nested if
+	B. Looping 
+		> While / Nested While 
+		> For / Nested for
+
+2. Unconditional:
+	a. Break
+	b. Continue
+	c. Pass
+
+===========>>  looping concepts  <<===============
+# while loop
+ 
+1.) count = 0
+     while count<=5:
+	print(1)
+	count = count+1   #count+=1
+o/p ==>  1 1 1 1 1
+
+2.) count = 0
+     while count<=5:
+	print(count)
+	count = count+1   #count+=1
+o/p ==>  1 2 3 4 5 
+
+3.) count = 0
+     while count<=10:
+	print(count)
+	count = count+1   #count+=1
+o/p ==>  1 2 3 4 5 6 7 8 9 10
+
+4.) reverse print
+     count = 5
+     while count>=1:
+	print(count)
+	count = count-1   #count+=1
+o/p ==> 5 4 3 2 1
+
+5.) count = 10
+     while count>=1:
+	print(count)
+	count = count-2   #count+=1
+o/p ==> 10 8 6 4 2
+
+6.) count = 2
+     while count<=10:
+	print(count)
+	count = count+2   #count+=1
+o/p ==> 2 4 6 8 10
+
+7.)even number
+     count = 2
+     while count<=100:
+	print(count)
+	count = count+2   #count+=1
+o/p ==> 2 4 6 8 10 12 14 .........100
+
+8.)odd number
+     count = 1
+     while count<=10:
+	print(count)
+	count = count+2   #count+=1
+o/p ==> 1 3 5 7 9
+
+9.)odd number
+     count = 1
+     maxno=int(input("enter maximum number : "))
+     while count<=maxno:
+	print(count)
+	count = count+2   #count+=1
+o/p ==> 1 3 5 7 9......
+
+10.)even number
+     count = 2
+      maxno=int(input("enter maximum number : "))
+     while count<=maxno:
+	print(count)
+	count = count+2   #count+=1
+o/p ==> 2 4 6 8 10 12 14 .........100
+
+11.)multiples of 3
+     count = 3
+      maxno=int(input("enter maximum number : "))
+     while count<=maxno:
+	print(count)
+	count = count+3   #count+=1
+o/p ==> 3 6 9 12 15 18.....
+
+12.)square of 3
+     count = 3
+      maxno=int(input("enter maximum number : "))
+     while count<=maxno:
+	print(count)
+	count = count*3   #count+=1
+o/p ==> 3 9 27 81 243 .....
+
+13.) multiples of 3 another way
+start = 1
+while start <=100:
+    if start%3==0:
+        print(start, end= ' ')
+    start = start+1
+o/p ==> 3 6 9 12 15 18 21 24 27 30
+
+14.) multiples of 2 and 3
+start = 1
+while start <=100:
+    if start%3==0 and start%2==0:
+        print(start, end= ' ')
+    start = start+1
+o/p ==> 6 12 18 24 30 36 42 48 54 60
+15.) multiples of 2 or 3
+start = 1
+while start <=100:
+    if start%3==0 or start%2==0:
+        print(start, end= ' ')
+    start = start+1
+o/p ==> 2 3 4 6 8 9 10 12 14 15 16 18 20 21 22 24 26 27 28 30....
+
+16.)addition of n numbers
+
+amount=1
+box=0
+days=int(input("enter max range "))
+while amount<=days:
+    box=box+amount
+    amount+=1
+print(box)
+o/p ==> 15
+
+17.) name letter seperating
+
+name=input("enter youur name: ")
+length =len(name)
+i=0
+while i<length:
+	print(name[i])
+	i=i+1  #i+=1
+o/p---> enter youur name: mani
+m
+a
+n
+i
+
+18.) name letter seperating
+
+name=input("enter youur name: ")
+length =len(name)
+i=0
+while i<length:
+	if name[i]=='a':
+		print(name[i])
+	i=i+1  #i+=1
+o/p---> enter youur name: mani
+a
+19.) break keyword 
+
+name=input("enter youur name: ")
+length =len(name)
+i=0
+while i<length:
+	if name[i]=='a':
+		print(name)
+		break
+	i=i+1  #i+=1
+o/p---> enter youur name: mani
+mani
+
+20.)continue keyword
+
+name=input("enter youur name: ")
+length =len(name)
+i=0
+while i<length:
+    if name[i]=='a':
+        i=i+1
+        continue
+    print(name[i])
+    i=i+1  #i+=1
+o/p---> enter youur name: manikandan
+m
+n
+i
+k
+n
+d
+n
+21.)break key word
+no = 0
+while no<=10:
+    no=no+1
+    if no==5:
+        break
+    print(no)
+ o/p--->1 2 3 4       
+
+22.)continue key word
+no = 0
+while no<=10:
+    no=no+1
+    if no==5:
+        continue
+    print(no)
+ o/p--->1 2 3 4 6 7 8 9 10
+
+23.)vowles count
+name = input("Enter  your  name:  ")
+length=len(name)
+i = 0
+while i<length:
+    if name[i]=='a' or name[i]=='e' or name[i]=='i' or name[i]=='o' or name[i]=='u':
+        print(name[i])
+    i=i+1
+ o/p---> Enter  your  name:  manikandan
+a
+i
+a
+a
+
+24.)vowles count
+name = input("Enter  your  name:  ")
+length=len(name)
+i = 0
+while i<length:
+    if name[i] in ['a','e','i','o','u']:
+        print(name[i])
+    i=i+1
+  o/p---> Enter  your  name:      abinaya
+a
+i
+a
+a
+25.)vowles count
+name = input("Enter  your  name:  ")
+length=len(name)
+i = 0
+while i<length:
+    if name[i] not in ['a','e','i','o','u']:
+        print(name[i])
+    i=i+1
+
+o/p---> Enter  your  name:  manikandan
+m
+n
+k
+n
+d
+n
+26.)vowles count total
+name = input("Enter  your  name:  ")
+length=len(name)
+i = 0
+count =0
+while i<length:
+    if name[i]  in ['a','e','i','o','u']:
+        count+=1  
+    i=i+1
+print("no of vowles are present : ",count)
+
+o/p---> Enter  your  name:  manikandan
+no of vowles are present :  4
+
+27.)words count total
+
+name = input("Enter a sentense:  ")
+length=len(name)
+i = 0
+count =1
+while i<length:
+    if name[i]==' ':
+        count+=1  
+    i=i+1
+print("no of words are present : ",count)
+
+o/p---> Enter a sentense:  In this video tutorial, we discuss elaborately about, looping in Python through Tamil
+no of words are present :  13
+
+27.)multiples of 3
+
+no = int(input("enter a number: "))
+count =int(input("how many times : "))
+while count>=1:
+    print(no)
+    no=no+3
+    count=count-1
+o/p---> enter a number: 3
+how many times : 10
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+
+27.)LCM - least common multiple
+
+no1 = int(input("enter no1: "))
+no2 = int(input("enter no2: "))
+big = no1 if no1>no2 else no2
+while True:
+    if big %no1==0 and big %no2==0:
+        print("least common multiple is LCM: ",big)
+        break
+    big+=1
+
+o/p---> enter no1: 5
+enter no2: 18
+least common multiple is LCM:  90
+
+28.)Factorial  number
+
+no = int(input("enter any no: "))
+total=1
+while no>=1:
+    total=total*no
+    no-=1
+print("factorial is: ", total)
+
+o/p--> enter any no: 5
+factorial is:  120
+
+enter any no: 4
+factorial is:  24
+
+29.)addition of numbers
+
+no = int(input("enter any no: "))
+total=0
+while no>=1:
+    total=total+no
+    no-=1
+print("addition of no is: ", total)
+
+30.)reverse a given  numbers
+
+no = input("enter any no: ")
+reverse =''
+i=len(no)-1
+while i>=0:
+    reverse=reverse+no[i]
+    i=i-1
+print(reverse)
+
+o/p--> enter any no: 1234
+4321
+
+31.)palindrome
+
+no = input("enter any no: ")
+reverse =''
+i=len(no)-1
+while i>=0:
+    reverse=reverse+no[i]
+    i=i-1
+print(reverse)
+if no==reverse:
+    print("palindrome")
+else:
+    print("not palindrome")
+
+o/p--> enter any no:  malayalam
+malayalam
+palindrome
+
+32.) sumof digits & count of digits
+
+no=int(input("enter a number"))
+count=0
+sumofdigits=0
+while no>0:
+    print(no%10)
+    sumofdigits=sumofdigits+no%10
+    no=no//10
+    count+=1
+print('count of digitd :',count)
+print('sum of digitd :',sumofdigits)
+
+o/p--> enter a number1234
+4
+3
+2
+1
+count of digitd : 4
+sum of digitd : 10
+
+
+33.)Armstrong number
+# square of digit is armstrong number
+
+no=int(input("enter a number :"))
+no2=no
+armstrong=0
+while no>0:
+    rem = no%10
+    armstrong = armstrong+ (rem*rem*rem)
+    no=no//10
+    
+if no2==armstrong:
+    print("Armstrong number")
+else:
+    print("Not Armstrong number")
+
+o/p--> enter a number :153
+Armstrong number
+
+o/p-->  enter a number :123
+Not Armstrong number
+
+
+34.) Fibonacci series
+
+f,s = -1,1
+count=int(input("enter range: "))
+while True:
+    t=f+s
+    print(t,end='')
+    if t==count:
+        break
+    f=s
+    s=t
+
+o/p-->  enter range: 13
+011235813
+
+
+35.) Fibonacci series without 3rd variable:
+
+first = -1
+second = 1
+count = int(input("enter number: "))
+
+while count>0:
+    print(first+second)
+    second = first+second  # -1+1= 0
+    first = second-first    # 0-(-1)= 1
+    count-=1
+
+o/p--> enter number: 10
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+
