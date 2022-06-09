@@ -1,0 +1,497 @@
+---------------------->> List function <<---------------------------
+
+# list creation:
+
+l=[]
+print(l)
+
+1.)
+l=[]
+l1=[10,20,'a','b']
+
+print(l)
+print(type(l))
+print(id(l))
+print(l1)
+print(len(l1))
+
+o/p--->
+[]
+<class 'list'>
+2821691812352
+[10, 20, 'a', 'b']
+4
+
+# 2.)
+l=list(range(5))
+l1=list(range(10,20))
+l2=list(range(0,50,5))
+print(l)
+print(l1)
+print(l2)
+
+o/p--->
+[0, 1, 2, 3, 4]
+[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+[0, 5, 10, 15, 20, 25, 30, 35, 40, 45]
+
+#3.)
+
+s='happy new year'
+list=s.split()
+print(list)
+
+
+s1="30-10-2022"
+list=s1.split('-')
+for x in list:
+    print(x)
+    
+s1='Today is sunday'
+list=s1.split()
+for x in list:
+    print(x)
+
+o/p--->
+['happy', 'new', 'year']
+
+30
+10
+2022
+
+Today
+is
+sunday
+
+# 4.)
+l1=[10,20,30,'a',True]
+print(l1[0])
+print(l1[1])
+print(l1[2])
+print(l1[-1])
+print(l1[-2])
+
+l2=[10,20,100,'b']
+l2[0]=999
+print(l2)
+
+o/p--->
+10
+20
+30
+True
+a
+[999, 20, 100, 'b']
+
+#5.)
+l1=[10,20,30,'a',True]
+for i in l1:
+    print(i)
+o/p--->
+10
+20
+30
+a
+True
+5.a)
+l1=[10,20,30,'a',True]
+i=0
+while i<len(l1):
+    print(l1[i])
+    i+=1
+   
+o/p--->
+10
+20
+30
+a
+True
+
+-------------------------  list append function  -----------------
+
+1.)
+no=[]
+
+for i in range(1,11):
+    if i%2==0:
+        no.append(i)
+print(no)
+
+o/p---->
+[2, 4, 6, 8, 10]
+
+1.a)
+no=[]
+
+for i in range(1,11):
+    if i%2==0:
+        no.append(i*i)
+print(no)
+
+o/p--->
+[4, 16, 36, 64, 100]
+
+
+1.b)
+no=[]
+
+for i in range(1,11):
+    if i%2==0:
+        no.append(i**i)
+print(no)
+
+o/p--->
+[4, 256, 46656, 16777216, 10000000000]
+
+---------------- ----------- List - insert function  -----------------------
+
+# 2.)
+l=[10,20,30,40,50]
+l.insert(3,100)
+print(l)
+
+l.insert(100,1000)
+print(l)
+
+l.insert(-100,3)
+print(l)
+
+l.insert(-90,5)
+print(l)
+o/p--->
+
+[10, 20, 30, 100, 40, 50]
+[10, 20, 30, 100, 40, 50, 1000]
+[3, 10, 20, 30, 100, 40, 50, 1000]
+[5, 3, 10, 20, 30, 100, 40, 50, 1000]
+
+-------------- List - extend function ----------------------
+# 3.)
+l1=[10,20,30,40,50]
+l2=['a','b','c']
+
+l1.extend(l2)
+print(l1)
+
+l1.extend('abi')
+print(l1)
+
+o/p---->
+
+[10, 20, 30, 40, 50, 'a', 'b', 'c']
+[10, 20, 30, 40, 50, 'a', 'b', 'c', 'a', 'b', 'i']
+
+------------ List - remove & pop function ---------------------
+# 4.)
+l=[10,20,30,40,50]
+
+l.remove(20)
+print(l)
+
+l.pop()
+print(l)
+
+l.pop(2)
+print(l)
+
+o/p---->
+[10, 30, 40, 50]
+[10, 30, 40]
+[10, 30]
+
+
+# 5.)
+l=['a','b','c','d','e']
+i=len(l)-1
+
+while i>=0:
+    print(l[i],end=' ')
+    i-=1
+o/p--->
+e d c b a
+
+6.)
+l=['a','b','c','d','e']
+i=len(l)-1
+l2=[]
+
+while i>=0:
+    l2.append(l[i])
+    #print(l[i],end=' ')
+    i-=1
+print(l2)
+
+o/p---->
+['e', 'd', 'c', 'b', 'a']
+
+# 6.) reverse a sentence
+
+s=input("enter a sentence: ")
+l=s.split()
+print(l)
+
+i=len(l)-1
+l2=[]
+
+while i>=0:
+    l2.append(l[i])
+    i-=1
+print(l2)
+
+o/p--->
+['Today', 'is', 'sunday']
+['sunday', 'is', 'Today']
+
+# 7.)
+
+s=input("enter a sentence: ")
+l=s.split()
+print(l)
+
+i=0
+l2=[]
+
+while i<len(l):
+    l2.append(l[i])
+    i+=2
+print(l2)
+
+o/p--->
+enter a sentence: wish you a very happy new year
+['wish', 'you', 'a', 'very', 'happy', 'new', 'year']
+['wish', 'a', 'happy', 'year']
+
+
+# 8.)
+s=input("enter a sentence: ")
+l=s.split()
+print(l)
+
+i=0
+l2=[]
+
+while i<len(l):
+    l2.append(l[i][::-1])
+    i+=2
+print(l2)
+o/p--->
+enter a sentence: wish you a very happy new year
+['wish', 'you', 'a', 'very', 'happy', 'new', 'year']
+['hsiw', 'a', 'yppah', 'raey']
+
+# 9.)
+s=input("enter a sentence: ")
+l=s.split()
+print(l)
+i=0
+l2=[]
+
+while i<len(l):
+    if i%2==0:
+        l2.append(l[i][::-1])
+    else:
+        l2.append(l[i])
+    i+=1
+print(l2)
+
+o/p--->
+enter a sentence: how do you do
+['how', 'do', 'you', 'do']
+['woh', 'do', 'uoy', 'do']
+
+# 10.) join function
+
+s=input("enter a sentence: ")
+l=s.split()
+print(l)
+i=0
+l2=[]
+
+while i<len(l):
+    if i%2==0:
+        l2.append(l[i][::-1])
+    else:
+        l2.append(l[i])
+    i+=1
+print(l2)
+
+output=' '.join(l2)
+print(output)
+
+o/p--->
+enter a sentence: we shall grow toether
+['we', 'shall', 'grow', 'toether']
+['ew', 'shall', 'worg', 'toether']
+ew shall worg toether
+
+# 11.)
+input=input("enter a sentence: ")
+#'Sun Mon Tues Wednes Thurs Fri Satur '
+words= input.split()
+words2=[]
+for word in words:
+    words2.append(word+'day')
+
+output=' '.join(words2)
+print(output)
+
+o/p--->
+enter a sentence: Sun Mon Tues Wednes Thurs Fri Satur
+Sunday Monday Tuesday Wednesday Thursday Friday Saturday
+
+# 12.)
+input=input("enter a sentence: ")
+#'Sun Mon Tues Wednes Thurs Fri Satur '
+words= input.split()
+words2=[]
+for word in words:
+    if word[-1]=='s':
+        words2.append(word+'day')
+
+output=' '.join(words2)
+print(output)
+
+o/p--->
+enter a sentence: Sun Mon Tues Wednes Thurs Fri Satur
+Tuesday Wednesday Thursday
+
+# 13.)
+input=input("enter a sentence: ")
+#'Sun Mon Tues Wednes Thurs Fri Satur '
+words= input.split()
+words2=[]
+for word in words:
+    if word[0]=='T':
+        words2.append(word+'day')
+
+output=' '.join(words2)
+print(output)
+
+o/p--->
+enter a sentence: Sun Mon Tues Wednes Thurs Fri Satur
+Tuesday Thursday
+
+# 14.)
+input=input("enter a sentence: ")
+#'Sun Mon Tues Wednes Thurs Fri Satur '
+words= input.split()
+words2=[]
+for word in words:
+    if len(word)>=4:
+        words2.append(word+'day')
+
+output=' '.join(words2)
+print(output)
+
+o/p---->
+enter a sentence: Sun Mon Tues Wednes Thurs Fri Satu
+Tuesday Wednesday Thursday Satuday
+
+------------------- List - Matrix  ------------------------
+
+# 1.)
+l=[
+[10,20,30],
+[40,50,60],
+[70,80,90]
+]
+
+for i in l:
+    print(i)
+
+o/p--->
+
+[10, 20, 30]
+[40, 50, 60]
+[70, 80, 90]
+
+# 2.) diganal values:
+
+l=[
+[10,20,30],
+[40,50,60],
+[70,80,90]
+]
+
+for i in range(len(l)):
+    ll=l[i]
+    for j in range(len(ll)):
+        if i==j:
+            print(l[i][j])
+o/p--->
+10
+50
+90
+
+# 3.) sum of diagonal values:
+
+l=[
+[10,20,30],
+[40,50,60],
+[70,80,90]
+]
+sum=0
+for i in range(len(l)):
+    ll=l[i]
+    for j in range(len(ll)):
+        if i==j:
+            sum=sum+l[i][j]
+            print(l[i][j])
+print("sum of diagonal values: ", sum)
+
+o/p--->
+10
+50
+90
+sum of diagonal values:  150
+
+------------- list comperhension- (surukkam) -------------
+
+# 5.)
+l=[i**i for i in range(1,6)]
+
+print(l)
+
+l1=[val for val in l if val%2==0]
+
+print(l1)
+
+o/p--->
+[1, 4, 27, 256, 3125]
+[4, 256]
+
+# 6.)
+names=['abi','sanjay','arun','rahul']
+
+l=[names[0] for name in names]
+
+print(l)
+
+o/p--->
+['abi', 'abi', 'abi', 'abi']
+
+# 7.)
+
+no1=[100,200,300,400]
+no2=[300,400,500,600]
+
+for i in no1:
+    if i not in no2:
+        print(i)
+        
+for i in no1:
+    if i  in no2:
+        print(i)
+    print()    
+l=[i for i in no1 if i not in no2]
+
+print(l)
+
+o/p--->
+100
+200
+
+300
+400
+
+[100, 200]
