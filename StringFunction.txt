@@ -1,0 +1,291 @@
+-------------------------------->> String Function <<----------------------------
+
+1.) letter present in a sentence
+
+s='python is very very easy'
+position=-1
+length=len(s)
+print(length)
+
+while True:
+    position=s.find('y',position+1,length)
+    if position==-1:
+        break
+    print('y is present at: ',position)
+
+o/p--->
+24
+y is present at:  1
+y is present at:  13
+y is present at:  18
+y is present at:  23
+
+2.)word present
+s='python is very very easy'
+position=-1
+length=len(s)
+print(length)
+
+while True:
+    position=s.find('very',position+1,length)
+    #print(position)
+    if position==-1:
+        break
+    print('very is present at: ',position)
+o/p--->
+24
+very is present at:  10
+very is present at:  15
+
+3.)word count
+
+s='python is very very easy'
+position=-1
+length=len(s)
+print(length)
+count=0
+
+while True:
+    position=s.find('very',position+1,length)
+    #print(position)
+    if position==-1:
+        break
+    count+=1
+    #print('very is present at: ',position)
+print('very in total count',count)
+o/p---->
+24
+very in total count 2
+
+4.) character check
+
+s='python is very very easy'
+position=-1
+length=len(s)
+count=0
+sticker=False
+
+while True:
+    position=s.find('b',position+1,length)
+    #print(position)
+    if position==-1:
+        break
+    count+=1
+    print('b is present at: ',position)
+    sticker=True
+if sticker==False:
+    print('b is not present at all')
+
+o/p--->
+b is not present at all
+
+6.a) another way
+
+s='python is very very easy'
+position=-1
+length=len(s)
+count=0
+#sticker=False
+
+while True:
+    position=s.find('b',position+1,length)
+    #print(position)
+    if position==-1:
+        break
+    count+=1
+    print('b is present at: ',position)
+    #sticker=True
+if count==0:
+    print('b is not present at all')
+else:
+    print('b is present',count)
+
+o/p--->
+b is not present at all
+
+
+7.) position check:
+
+s='python is very very easy'
+count=0
+position =0
+for x in s:
+    if x=='y':
+        print(x,'is present ar',position)
+        count+=1
+    position+=1
+else:
+    print(count)
+o/p--->
+y is present ar 1
+y is present ar 13
+y is present ar 18
+y is present ar 23
+4
+
+8.) count function
+
+s='python is very very easy'
+print(s.count('y',3,24))
+
+s='python is very very easy'
+print(s.count('y',14,24))
+o/p--->
+3
+2
+
+9.) replace function
+
+name='raja'
+name2=name.replace('r','k')
+print(name2)
+o/p--->
+kaja
+
+10.) python function:
+
+s='python is easy'
+
+print(s.upper())
+print(s.lower())
+print(s.swapcase())
+print(s.title())
+print(s.capitalize())
+print(s[0].upper()+s[1:])
+print(so[:-1]+s[-1].upper())
+
+
+s='python is easy'
+
+print(s.isalpha())
+print(s.isdigit())
+
+print(s.startswith('python'))
+print(s.endswith('easy'))
+
+
+o/p--->
+
+PYTHON IS EASY
+python is easy
+PYTHON IS EASY
+Python Is Easy
+Python is easy
+Python is easy
+python is easY
+
+False
+False
+
+True
+True
+
+
+11.)number -or- alphapets -or- special char print:
+
+mailid=input("enter your mailid: ")
+length=len(mailid)
+i=0
+while i<length:
+    if mailid[i]>='0' and mailid[i]<='9':
+        print(mailid[i],end='')
+    i+=1
+o/p--->
+enter your mailid: raja12345@gmail.com
+12345
+
+11.a)
+mailid=input("enter your mailid: ")
+length=len(mailid)
+i=0
+while i<length:
+    if mailid[i]>='a' and mailid[i]<='z':
+        print(mailid[i],end='')
+    i+=1
+o/p--->
+enter your mailid: raja12345@gmail.com
+rajagmailcom
+
+11.b)
+mailid=input("enter your mailid: ")
+length=len(mailid)
+i=0
+while i<length:
+    if not mailid[i]>='a' and mailid[i]<='z':
+        print(mailid[i],end='')
+    i+=1
+o/p--->
+enter your mailid: raja12345@gmail.com
+12345@.
+
+11.c)
+
+mailid=input("enter your mailid: ")
+length=len(mailid)
+i=0
+while i<length:
+    if not mailid[i]>='a' and mailid[i]<='z':
+        if not mailid[i]>='0' and mailid[i]<='9':
+            print(mailid[i],end='')
+    i+=1
+o/p--->
+.
+
+ 12.) mobile number check:
+
+mobile='1234567890'
+
+for letter in mobile:
+    if not (letter>='0' and letter<='9'):
+        print("It is not correct number")
+        break
+else:
+    print("done,correct number")
+o/p--->
+
+done,correct number
+
+13.) space count check
+
+s=input("enter a sentence: ")
+
+count =0
+for x in s:
+    if x==' ':
+        count+=1
+else:
+    print('space count',count)
+o/p--->
+enter a sentence: today is sunday
+space count: 2
+
+14.)
+s1=input("enter a name: ")
+s2=input("enter a name: ")
+i=0
+j=0
+comb=''
+while i<len(s1) or j<len(s2):
+    if i<len(s1):
+        comb=comb+s1[i]
+        i+=1
+    if j<len(s2):
+        comb=comb+s2[j]
+        j+=1
+print(comb)
+
+o/p--->
+enter a name: abi
+enter a name: rajesh
+arbaijesh
+
+15.)
+s=input("enter a string: ")
+output=''
+output=output+s[0]
+output=output*int(s[1])
+print(output)
+
+o/p--->
+enter a string: B7
+BBBBBBB
