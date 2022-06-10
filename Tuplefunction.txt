@@ -1,0 +1,80 @@
+----------------------->> Tuple Datatype <<-------------------------------
+
+# 1. Tuple is immutable
+# 2. Insertion order is maintain
+# 3. Duplicate values are allowed
+# 4. Tuple ---> ()
+# 5. Tuple packing / Unpacking used
+
+
+1.)
+t=(10,20,30,40,50,60,70,80,90)
+t1=(10)
+t12=(10,)
+
+print(t)
+print(t1)
+print(type(t1))
+
+print(type(t))
+print(type(t12))
+print(t12)
+print(t[0])
+print(t[-1])
+
+print(t[2:5])
+print(t[::2])
+print(t12[-1])
+
+t[1]=123  # TypeError: 'tuple' object does not support item assignment
+
+o/p---->
+
+(10, 20, 30, 40, 50, 60, 70, 80, 90)
+10
+<class 'int'>
+<class 'tuple'>
+<class 'tuple'>
+(10,)
+10
+90
+(30, 40, 50)
+(10, 30, 50, 70, 90)
+10
+
+2.)
+
+t1=(10,20,30)
+t2=(5,10,15)
+t3=t1+t2
+print(t3)
+
+print(len(t3))
+print(t3.count(10))
+print(t3.index(10))
+
+t5=sorted(t3)
+print(t5)
+
+t5=sorted(t3, reverse=True)
+print(t5)
+
+print(min(t5))
+print(max(t5))
+print(sum(t5))
+
+t4=t1*2
+print(t4)
+
+o/p--->
+
+(10, 20, 30, 5, 10, 15)
+6
+2
+0
+[5, 10, 10, 15, 20, 30]
+[30, 20, 15, 10, 10, 5]
+5
+30
+90
+(10, 20, 30, 10, 20, 30)
