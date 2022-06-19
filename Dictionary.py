@@ -102,3 +102,75 @@ d = {120: 'abi', 121: 'sanjay', 122: 'ajay', 123: 'kumar', 100: 'rahul'}
 d1 = d.copy()
 print(d1)
 
+# get functions:
+
+d = {'name': 'Arun', 'age': 23}
+print(d.get('name'))
+print(d.get('salary'))
+print(d.get('salary', 'salary is not avaliable in the dictionary'))
+print('-------------------------')
+
+# getting item for a dictionary:
+
+register = {}
+while True:
+    name = input('Enter your name: ')
+    mark = int(input("Enter your mark: "))
+    
+    register[name] = mark
+    next_candidate = input('enter no to stop: ')
+    if next_candidate == 'no':
+        break
+print(register)
+print('-------------------------')
+
+# super market dict functions:
+
+supermarket = {}
+while True:
+    p_name = input("Enter product_name: ")
+    p_price = int(input("Enter product_price: "))
+    
+    supermarket[p_name] = p_price
+    
+    next_product = input("Enter yes or no stop: ")
+    if next_product == 'no':
+        break
+print(supermarket)
+print('-------------------------')
+
+
+d= {'apple': 100, 'orange': 120, 'banana':70, 'lemon':50}
+for p_name,p_price in d.items():
+    print(p_name, '<--->', p_price)
+    
+for p_name,p_price in d.items():
+    print(d[p_name])
+
+for p_name,p_price in d.items():
+    print(d[p_price])
+    
+print('-------------------------')
+
+
+f= {'apple': 100, 'orange': 120, 'banana':70, 'lemon':50}
+f2 = {}
+for f_name,f_price in f.items():
+    f2[f_price] = f_name
+print(f2)
+print('--------------------------------')
+
+# dictionary comperhension:
+
+e = {'abi': 101, 'raj':102}
+print(e)
+e = {value:key for key,value in e.items()}
+print(e)
+print('--------------------------------')
+
+emp = {'rahul':30000, 'akash':20000, 'ram':25000, 'sri':40000}
+for emp_name,emp_salary in emp.items():
+    if emp_salary>=25000:
+        print(emp_name, 'salary is', emp_salary)
+print('--------------------------------')
+
